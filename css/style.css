@@ -89,32 +89,36 @@ nav a:hover {
     color: navajowhite;
 }
 
-.menu{
-      display: grid;
+.menulist > section {
+  display: grid;
   max-width: 1200px;
-  margin: 4vw;;
+  margin: auto;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 60px;
-  margin-top: 20px;
+  margin-bottom: 60px;
+     border-radius: 50%;
+}
+
+.menulist > section > h2 {
+  grid-column: 1/-1;
+  margin-bottom: -40px;
 
 }
-.menu > section > h2 {
-  grid-column: 1/-1;
-  margin-bottom: -2px;
-}
-#starter{
-    border-radius: 50%;
-}
+
 .product {
 
   display: flex;
   flex-direction: column;
-
+  background: rgba(255, 255, 255, 1);
   box-shadow: 3px 3px 5px #000000ab;
 
+
 }
+.descrip{
 
-
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 
 .productbody {
   position: relative;
@@ -124,6 +128,7 @@ nav a:hover {
   justify-content: space-between;
   padding: 1em;
 }
+
 .productbody button {
   margin-top: auto;
   background-color: lightblue;

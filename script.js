@@ -15,7 +15,9 @@ function showProduct(myProduct) {
     console.log(myProduct)
     const temp = document.querySelector("#productTemplate").content;
     const myCopy = temp.cloneNode(true);
-    myCopy.querySelector(".dish_name").textContent = myProduct.name;
+    myCopy.querySelector(".data_name").textContent = myProduct.name;
+     myCopy.querySelector(".descrip").textContent = myProduct.description;
+     myCopy.querySelector(".data_price").textContent = myProduct.price;
     const parentElem = document.querySelector("section#starter");
     parentElem.appendChild(myCopy)
           }
