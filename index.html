@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nirajan Restaurant</title>
     <link rel="stylesheet" href="css/style.css">
-     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
 </head>
+<body>
 <main class="head">
     <header>
         <h1 class="logo">NIRAJAN RESTAURANT</h1>
@@ -18,27 +19,32 @@
             <a href="#">Side orders</a>
         </nav>
     </header>
-        <section class="info">
+    <section class="info">
         <h2>Hello there</h2>
         <h1>Feeling Hungry?</h1>
-        <p>Let us serve you the most delicious and healthy food!</p></section>
-    </main>
-    <main class="menu">
-        <section id="starter">
-            <h2>Starter</h2>
-            <article class="product"><img src="images/bondeplatte-md.jpg"></article>
-            <section class="product body">
-            <h3 class="dish_name"></h3>
+        <p>Let us serve you the most delicious and healthy food!</p>
+    </section>
+</main>
+<main class="menu">
+    <section id="starter">
+        <h2>Starter</h2>
+        <template id="productTemplate">
+        <article class="product"><img src="images/bondeplatte-sm.jpg">
+        <section class="productbody">
+            <h3 class="dish_name">Bondeplatte</h3>
             <p>Description</p>
             <h4 class="dish_price">100,-</h4>
-            <button>see more</button></section>
+            <button>see more</button>
         </section>
+            </article>
+            </template>
+    </section>
 
-        <section id="main"></section>
-        <section id="dessert"></section>
-        <section id="Side orders"></section>
-    </main>
-<body>
+    <section id="main"></section>
+    <section id="dessert"></section>
+    <section id="Side orders"></section>
+</main>
 
-</body>
-</html>
+<script src="script.js"></script>
+
+</body></html>
