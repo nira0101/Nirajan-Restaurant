@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirajan Restaurant</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Restaurant Petrograd</title>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet" />
 </head>
+
 <body>
-<main class="head">
+  <!-- Navigation -->
+  <main class="head">
     <header>
         <h1 class="logo">NIRAJAN RESTAURANT</h1>
         <nav>
-
-            <a href="#starter">Starter</a>
-            <a href="#">Main</a>
-            <a href="#">Dessert</a>
-            <a href="#">Drinks</a>
-            <a href="#">Side orders</a>
-
         </nav>
     </header>
     <section class="info">
@@ -27,30 +30,51 @@
         <p>Let us serve you the most delicious and healthy food!</p>
     </section>
 </main>
-<main class="menulist">
-    <section id="starter">
-      <h2>Starter</h2>
-      <template id="productTemplate">
-        <article class="product">
-          <img src="https://kea-alt-del.dk/t5/site/imgs/small/rodbede-cabanossi-sm.jpg" alt="" />
+  <details>
+    <summary>Filters</summary>
+    <button id="veggiefilter">Veggie dishes</button>
+    <button id="alcoholfilter">Non-alcoholic dishes</button>
+  </details>
+  <!-- Page Content -->
 
-          <section class="productbody">
-            <h3 class="data_name">Some really delisious dish</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, velit inventore. Architecto nihil quis temporibus aut.
-            </p>
-            <h4 class="data_price">49,-</h4>
-              <h4 class="data_discount">disc</h4>
-            <button>See more</button>
-          </section>
-        </article>
-      </template>
-    </section>
+  <main class="productlist">
 
+    <template id="productTemplate">
+      <article class="product">
+        <img class="product_image" src="https://kea-alt-del.dk/t5/site/imgs/small/rodbede-cabanossi-sm.jpg" alt="" />
+        <div class="icons">
+          <img class="vegetarian hidden" src="images/vegetarianism-vegan-friendly-veganism-logo-brand-vegetarian-logo-png-clip-art.png">
+        </div>
+        <section class="productbody">
+          <h3 class="data_name">Some really delisious dish</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum, velit inventore. Architecto nihil quis temporibus aut.
+          </p>
+          <h4 class="data_price">49,-</h4>
+          <h4 class="data_discount">DISC,-</h4>
 
-</main>
+          <button id="see_details">See details</button>
+        </section>
+      </article>
+    </template>
 
-<script src="script.js"></script>
+  </main>
 
-</body></html>
+  <footer>
+    <p>Copyright &copy; Nirajan</p>
+  </footer>
+
+  <div class="modal-background hide">
+    <div class="modal-content">
+      <h3 class="modal-name">NAME</h3>
+      <img src="" alt="" class="modal-image" />
+      <p class="modal-description">LONG DESCRIPTION</p>
+      <h4 class="modal-price">PRICE</h4>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
