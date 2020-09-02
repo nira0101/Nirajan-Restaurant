@@ -19,6 +19,7 @@ body {
 }
 
 header {
+
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -29,6 +30,7 @@ header {
 }
 
 nav {
+
     display: flex;
     justify-content: center;
     align-self: flex-end;
@@ -104,7 +106,6 @@ nav a:hover {
   margin-bottom: -40px;
 
 }
-
 .product {
 
   display: flex;
@@ -114,11 +115,11 @@ nav a:hover {
 
 
 }
-.descrip{
 
-  font-size: 1rem;
-  line-height: 1.5rem;
+.icon{
+    width: 10vw;
 }
+
 
 .productbody {
   position: relative;
@@ -138,4 +139,9 @@ nav a:hover {
   font-size: 1.3rem;
   cursor: pointer;
     width: 10vw;
+}
+
+
+.hidden{
+    display: none;
 }
