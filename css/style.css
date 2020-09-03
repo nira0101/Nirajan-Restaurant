@@ -22,6 +22,7 @@ body {
 .head {
     height: 100vh;
     background-image: url(../images/pexels-alleksana-4051442.jpg);
+     box-shadow: 3px 3px 5px #000000ab;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,10 +92,10 @@ nav a:hover {
 
 .logo {
     font-size: 3vw;;
-    color: black;
+
     padding:   1vw;
     margin-top: 6vw;
-    color: navajowhite;
+    color: gold;
 }
 
 
@@ -127,6 +128,12 @@ nav a:hover {
   background: rgba(255, 255, 255, 1);
   box-shadow: 3px 3px 5px #000000ab;
   position: relative;
+    margin: 2vw;
+    transition: 0.5s;
+}
+.product:hover{
+    transform: scale(1.03);
+    transition: .5s;
 }
 
 .product p {
@@ -141,6 +148,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
+
 }
 
 .productbody button {
@@ -152,7 +160,17 @@ nav a:hover {
   font-size: 1.3rem;
   cursor: pointer;
 }
+data_discount h4{
+    color: green;
+}
+.fillers{
+    margin: 2vw;
+   width: 20vw;
+}
 
+#veggiefilter{
+    margin: .5vw;
+}
 footer {
   background-color: black;;
   margin-bottom: 0;
@@ -177,21 +195,40 @@ button.active {
 #see_details{
     background-color: skyblue;
 }
+.data_discount{
+    position: absolute;
+    background-color: lightgreen;
+    color: white;
+    height: 2.5vw;
+    font-size: 2vw;
+    width: 10vw
 
+        ;
+    top: -2.5vw;
+    left: .1vw;
+    border-radius: 10%;
+
+}
+
+.data_price{
+    color: limegreen;
+}
 .soldout {
   position: absolute;
-  top: 20vw;;
-  left: 0;
+  top: 14.3vw;;
+  left: .5vw;;
+background-color: red;
 
-  width: 100%;
+  width: 13vw;;
   padding: .6rem;
   margin: 0;
-    transform: rotate(20deg);
+
+    color: red;
 }
-.soldout p{
-     color: red;
-    font-size: 5vw;
+p.soldout{
+     font-size: 2vw;
 }
+
 .icons{
     width: 5vw;
     display: flex;

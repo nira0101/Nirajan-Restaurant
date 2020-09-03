@@ -80,6 +80,8 @@ function showProduct(myProduct) {
 
   }
 
+
+
   //1. find the article
   const article = myCopy.querySelector("article");
 
@@ -92,6 +94,11 @@ function showProduct(myProduct) {
   }
   //fill out the template
   myCopy.querySelector(".data_name").textContent = myProduct.name;
+     myCopy.querySelector(".data_price").textContent = myProduct.price + "kr-/";
+    myCopy.querySelector(".data_discount").textContent = myProduct.discount + "% 0ff";
+     myCopy.querySelector(".short").textContent = myProduct.shortdescription;
+
+
 
 
 
