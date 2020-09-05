@@ -173,15 +173,20 @@ data_discount h4{
 }
 footer {
   background-color: black;;
-  margin-bottom: 0;
-  height: 100px;
+ display: flex;
+    justify-content: space-between;
+  height: 20vw;;
   color: #fff;
-  display: flex;
   align-items: center;
 }
 
 footer p {
-  margin-left: 60px;
+font-size: 1.8vw;
+
+}
+footer h1{
+    font-size: 2vw;
+    margin: 2vw;
 }
 
 .hidden {
@@ -254,4 +259,43 @@ p.soldout{
   border: 1px solid #7c1f17;
   margin: 1em;
   padding: 2em;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .head{
+       height: 70vh;
+    }
+    .logo{
+        font-size: 3vw;
+    }
+
+    nav a {
+   padding: 10px;
+        font-size: 2.5vw;
+}
+    .info{
+        margin: 18vw;
+    }
+    .info h1{
+     font-size: 4vw;
+    }
+    .info h2 {
+       font-size: 3vw;
+    }
+    .info p{
+        font-size: 3vw;
+    }
+    .data_discount{
+        height: 6vw;
+        width: 18vw;
+        font-size: 4vw;
+    }
+    .soldout{
+        top: 46vw;
+        width: 21vw;    }
+     p.soldout {
+        font-size: 5vw;
+    }
+
 }
